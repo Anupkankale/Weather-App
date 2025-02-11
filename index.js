@@ -15,7 +15,7 @@ const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
   }
   let data = await response.json();
   console.log(data);
-
+ 
   document.querySelector(".city").innerHTML = data.name;
   document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°";
   document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
@@ -33,7 +33,6 @@ const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
     weatherIcon.src = "images/mist.png";
   }
 }
-
 searchBtn.addEventListener("click", () => {
   checkWether(searchBox.value);
 });
