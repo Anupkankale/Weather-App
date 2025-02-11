@@ -4,9 +4,11 @@
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
-body {
+
+body{
   background-color: #222;
 }
+
 .card {
   width: 90%;
   max-width: 470px;
@@ -71,15 +73,18 @@ body {
   padding: 0 20px;
   margin-top: 50px;
 }
+
 .col{
     display: flex;
     align-items: center;
     text-align: left;
 }
+
 .col img{
     width: 40px;
     margin-right: 10px;
 }
+
 .humidity, .wind{
     font-size: 28px;
     margin-top: -6px;
