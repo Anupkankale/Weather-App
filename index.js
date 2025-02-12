@@ -20,6 +20,7 @@ const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
   document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°";
   document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
   document.querySelector(".wind").innerHTML = data.wind.speed + "km/h";
+  
 
   if (data.weather[0].main == "Clouds") {
     weatherIcon.src = "images/clouds.png";
